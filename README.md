@@ -9,17 +9,19 @@ Uses an iframe to load the content that should be printed and prints the frame.
 	page b.html without leaving a.html. By default the href attribute of the 
 	element will be used to load the content. 
 
-	<a id="my-element" href="b.html">Print Page B</a>
+	````<a id="my-element" href="b.html">Print Page B</a>````
 
 	Alternatively you can use a "data-print-url" attribute to specify the content url.
 
-	<button id="my-element" data-print-url="b.html">Print Page B</button>
+	````<button id="my-element" data-print-url="b.html">Print Page B</button>````
 
 	Enable the plugin like this:
 
+	````
 	<script>
 		jQuery('#my-element').printFrame();
 	</script>
+	````
 
 - Options: 
 
